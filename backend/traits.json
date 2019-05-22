@@ -1,0 +1,18 @@
+[
+  {
+    "type": "element",
+    "values": ["fire", "water", "earth", "sky"]
+  },
+  {
+    "type": "build",
+    "values": ["slender", "stocky", "sporty", "skinny"]
+  },
+  {
+    "type": "nature",
+    "values": ["adamant", "modest", "timid", "jolly"]
+  },
+  {
+    "type": "size",
+    "values": ["small", "medium", "large", "huge"]
+  }
+]
