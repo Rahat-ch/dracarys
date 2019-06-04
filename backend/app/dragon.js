@@ -2,6 +2,7 @@ const TRAITS = require("../data/traits");
 
 const DEFAULT_PROPERTIES = {
   nickname: "unamed",
+  generationID: undefined,
   get birthdate() {
     return new Date();
   },
@@ -23,10 +24,11 @@ const DEFAULT_PROPERTIES = {
 
 //empty object allows for no arguments to be passed an an emptry object to be created
 class Dragon {
-  constructor({ birthdate, nickname, traits } = {}) {
+  constructor({ birthdate, nickname, traits, generationID } = {}) {
     this.birthdate = birthdate || DEFAULT_PROPERTIES.birthdate;
     this.nickname = nickname || DEFAULT_PROPERTIES.nickname;
     this.traits = traits || DEFAULT_PROPERTIES.randomTraits;
+    this.generationID = generationID || DEFAULT_PROPERTIES.generationID;
   }
 }
 
