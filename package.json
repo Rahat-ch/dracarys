@@ -1,0 +1,22 @@
+{
+  "name": "dracarys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nf start",
+    "backend": "nodemon backend/bin/server",
+    "frontend": "parcel frontend/src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahat-ch/dracarys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahat-ch/dracarys/issues"
+  },
+  "homepage": "https://github.com/Rahat-ch/dracarys#readme"
+}
