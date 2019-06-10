@@ -3,9 +3,12 @@ import { render } from "react-dom";
 import Generation from "./components/Generation";
 import Dragon from "./components/Dragon";
 
+import "./styles/reset.css";
+import "./styles/index.css";
+
 render(
   <div>
-    <h2>Dracarys From React</h2>
+    <h1 className="title">Dracarys</h1>
     <Generation />
     <Dragon />
   </div>,

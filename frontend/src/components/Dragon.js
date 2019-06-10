@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import DragonAvatar from "./DragonAvatar";
+import Button from "./utils/Button";
 
 const DEFAULT_DRAGON = {
   dragonId: "",
@@ -22,14 +24,15 @@ class Dragon extends Component {
       .catch(error => console.error("error", error));
   };
 
+  clickTest = () => {
+    console.log("Click bitch");
+  };
+
   render() {
-    const { generationId, dragonId, traits } = this.state.dragon;
     return (
       <div>
-        <span>G{generationId}. </span>
-        <span>I{dragonId}. </span>
-
-        {traits.map(trait => trait.traitValue).join(",")}
+        <Button click={this.fetchDragon} text="New Dragon 🐉" />
+        <DragonAvatar dragon={this.state.dragon} />
       </div>
     );
   }

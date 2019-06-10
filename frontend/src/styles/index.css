@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  margin: 1rem;
+  line-height: 2rem;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.button {
+  background-color: azure;
+  cursor: pointer;
+}
+
+.dragon {
+  max-width: 10rem;
+}
